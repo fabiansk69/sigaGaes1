@@ -1,15 +1,27 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3c.org/1999/xhtml"
-        xmlns:h="http://java.sun.com/jsf/html"
-        xmlns:p="http://primefaces.org/ui"
-        xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
     <h:head>
-        <title>Facelet Title</title>
+        <title>PizzaPizza</title>
+        <h:outputStylesheet library="css" name="login.css"/>
     </h:head>
     <h:body>
-        ayuda
-        <p:inputText/>
-        <p:commandButton value="Registrar"></p:commandButton>
+              
+        <h:form id="estylo1" styleClass=""> 
+            <p:fieldset legend="login" style="align-content: center;">
+                <p:panelGrid columns="2">
+                    <p:outputLabel for="txtUser" value="Usuario"/>
+                    <p:inputText id="txtUser" required="true"/>
+                    <p:outputLabel for="txtPass" value="contraseña"/>
+                    <p:password id="txtPass" required="true"/>
+                    <p:column/>
+                    <p:commandButton value="Ingresar" icon="ui-icon-key" />
+                </p:panelGrid>
+            </p:fieldset>
+           
+        </h:form> 
+        
     </h:body>
 </html>
